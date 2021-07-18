@@ -1,0 +1,38 @@
+//要素映射表:要素-地图
+const FeatureMap = [
+  {
+    map:"gaodemap",
+    layers:[
+      {
+        name:"双流行政区",
+        url:"http://113.54.15.11:6080/arcgis/rest/services//shuangliu/MapServer/0?f=jsapi",
+      },
+      {
+        name:"河流",
+        url:"http://113.54.15.11:6080/arcgis/rest/services//shuangliu/MapServer/1?f=jsapi",
+      },
+      {
+        name:"道路",
+        url:"http://113.54.15.11:6080/arcgis/rest/services//shuangliu/MapServer/2?f=jsapi",
+      },
+    ]
+  },
+  {
+    map:"satellite2D",
+    layers:[
+      {
+        name:"双流行政区",
+        url:"http://113.54.15.11:6080/arcgis/rest/services//shuangliu/MapServer/0?f=jsapi",
+      },
+      {
+        name:"河流",
+        url:"http://113.54.15.11:6080/arcgis/rest/services//shuangliu/MapServer/1?f=jsapi",
+      },
+      {
+        name:"道路",
+        url:"http://113.54.15.11:6080/arcgis/rest/services//shuangliu/MapServer/2?f=jsapi",
+      },
+    ]
+  }
+]
+export  {FeatureMap}

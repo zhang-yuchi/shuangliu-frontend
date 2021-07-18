@@ -1,0 +1,72 @@
+<template>
+	<div>
+		<Back></Back>
+		<div class="userinfo-title">
+			<svg t="1626491979778" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="4417" width="2rem" height="2rem"><path d="M512 1022.1056c-282.3168 0-511.232-228.864-511.232-511.0784S229.632 0 512 0c282.3168 0 511.232 228.8128 511.232 511.0272 0 282.2656-228.864 511.0784-511.232 511.0784z m0-926.2592a415.2832 415.2832 0 0 0-415.3856 415.232c0 107.2128 41.0624 204.6464 107.8272 278.3232 60.16-29.1328 38.0416-4.9152 116.736-37.2736 80.5888-33.1264 99.6352-44.6464 99.6352-44.6464l0.768-76.288s-30.1568-22.8864-39.5264-94.72c-18.8928 5.4272-25.088-22.016-26.2144-39.424-1.024-16.896-10.9568-69.4784 12.0832-64.7168-4.7104-35.1744-8.0896-66.8672-6.4-83.6608 5.7344-58.88 62.976-120.5248 151.0912-124.9792 103.68 4.4544 144.7424 66.048 150.528 124.928 1.6384 16.8448-2.048 48.5376-6.7584 83.6096 23.04-4.6592 13.0048 47.872 11.8784 64.7168-1.024 17.408-7.3728 44.7488-26.2144 39.3728-9.4208 71.7824-39.5776 94.464-39.5776 94.464l0.7168 75.9296s19.0976 10.8032 99.6352 43.9296c78.6944 32.3584 56.576 9.5744 116.736 38.7584a413.184 413.184 0 0 0 107.776-278.3744A415.232 415.232 0 0 0 512 95.7952z" fill="#4EB0FA" p-id="4418"></path></svg>
+		</div>
+		<el-card class="box-card">
+		  <div slot="header" class="clearfix">
+		    <span>个人信息</span>
+		    <!-- <el-button style="float: right; padding: 3px 0" type="text">操作按钮</el-button> -->
+		  </div>
+		  <div class="text item">
+		    姓名 小王
+		  </div>
+		</el-card>
+		<el-card class="box-card">
+		  <div slot="header" class="clearfix">
+		    <span>行政信息</span>
+		    <!-- <el-button style="float: right; padding: 3px 0" type="text">操作按钮</el-button> -->
+		  </div>
+		  <div class="text item">
+		    职务 学生
+		  </div>
+		</el-card>
+		<div style="position: fixed; width: 100%; bottom: 30px; text-align: center;">
+			<el-button style="width: 80%;"  type="info" plain>信息按钮</el-button>
+		</div>
+		
+	</div>
+</template>
+
+<script>
+import Back from "../components/util/back.vue"
+export default {
+	components:{
+		Back
+	}
+}
+</script>
+
+<style>
+	.userinfo-title{
+	/* 	position: relative; */
+		padding: 0.9375rem 0;
+		text-align: center;
+		border-radius: 9px;
+		background: #ffffff;
+		box-shadow:  5px 5px 12px #d4d4d4,
+		             -5px -5px 12px #ffffff;
+	}
+	.box-card{
+		margin-top: 15px;
+		font-size: 0.4rem;
+	}
+	.text {
+	    font-size: 14px;
+	  }
+	
+	  .item {
+	    margin-bottom: 18px;
+	  }
+	
+	  .clearfix:before,
+	  .clearfix:after {
+	    display: table;
+	    content: "";
+	  }
+	  .clearfix:after {
+	    clear: both
+	  }
+
+</style>
